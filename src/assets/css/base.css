@@ -1,0 +1,17 @@
+@import "./normalize.css";
+:root{
+  --color-text:rgb(0, 93, 84);
+  --color-hight-text:rgb(3, 214, 175);
+  --color-background:rgb(241, 241, 241);
+  --font-size:14px;
+  --line-height:1.5;
+}
+*,*::before,*::after{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: '微软雅黑',Arial, Helvetica, sans-serif;
+  font-size: var(--font-size);
+  color: var(--color-text);
+}
