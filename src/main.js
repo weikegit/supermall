@@ -5,7 +5,7 @@ import store from './store'
 import './plugins/element.js'
 import 'font-awesome/css/font-awesome.css'
  import axios from 'axios'
-import {request} from './network/request'
+// import {request} from './network/request'
 
 Vue.config.productionTip = false
 
@@ -15,15 +15,7 @@ new Vue({
    axios,
   render: h => h(App)
 }).$mount('#app')
-//ajax请求
-request({
-  url:'/json/homedata.json',
-  method:"GET"
-}).then(res => {
-  console.log(res)
-}).catch(err =>{
-  console.log(err)
-})
+
 //基本axios请求
 // axios({
 //   url:'/json/homedata.json'

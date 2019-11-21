@@ -10,7 +10,7 @@
 <script>
 // @ is an alias to /src
 import NavBar from "components/common/navbar/NavBar"
-// import {request} from 'network/request'
+import {request} from 'network/request'
 export default {
   name: 'home',
   components: {
@@ -18,14 +18,14 @@ export default {
   }
 }
 //ajax请求
-// request({
-//   url:'/json/homedata.json',
-//   method:"GET"
-// }).then(res => {
-//   console.log(res)
-// }).catch(err =>{
-//   console.log(err)
-// })
+request({
+  url:'/json/homedata.json',
+  method:"GET"
+}).then(res => {
+  console.log(res)
+}).catch(err =>{
+  console.log(err)
+})
 </script>
 <style>
 .shop-name{
