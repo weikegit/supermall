@@ -15,11 +15,16 @@
         </div>
       </div>
     </nav-bar>
-    <el-carousel indicator-position="outside" height="150px">
+    <home-banner :homeimg="imgList">
+      
+    </home-banner>
+    <!-- <el-carousel indicator-position="outside" height="150px">
       <el-carousel-item v-for="item in imgList" :key="item.id">
+        <a href="">
         <img :src="item.src" alt srcset />
+        </a> 
       </el-carousel-item>
-    </el-carousel>
+    </el-carousel> -->
     <h3>我是首页</h3>
   </div>
 </template>
@@ -27,22 +32,18 @@
 <script>
 // @ is an alias to /src
 import NavBar from "components/common/navbar/NavBar";
-// import { request } from "network/request";
-// import CarOusel from "components/common/carousel/Carousel";
+import { getHomeCarousel } from "network/home";
+import HomeBanner from 'components/common/carousel/Carousel';
 export default {
   name: "home",
   components: {
-    NavBar
+    NavBar,
+    HomeBanner
     // CarOusel
   },
   data() {
     return {
-      imgList: [
-        { id: 1, name: "1", src: require("assets/img/home/aisi.jpg") },
-        { id: 2, name: "2", src: require("assets/img/home/dlam.jpg") },
-        { id: 3, name: "3", src: require("assets/img/home/tianyu.jpg") },
-        { id: 4, name: "4", src: require("assets/img/home/xhr.jpg") }
-      ]
+      imgList: []
     };
   },
   methods: {
@@ -50,19 +51,18 @@ export default {
       this.$router.push("/category");
     }
   },
+  created() {
+    getHomeCarousel().then(res =>{
+      console.log(res);
+      this.imgList = res.data.home.img
+    })
+  },
+  mounted() {
+    
+  },
   computed: {}
 };
-//ajax请求
-// request({
-//   url: "/json/homedata.json",
-//   method: "GET"
-// })
-//   .then(res => {
-//     this.imgList = res.data.data.home.img;
-//   })
-//   .catch(err => {
-//     console.log(err);
-//   });
+
 </script>
 <style>
 .shop-name {
