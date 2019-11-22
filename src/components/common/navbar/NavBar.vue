@@ -34,7 +34,7 @@ export default {
 
 }
 .nav-left,.nav-right{
-  width: 60px;
+  width: 50px;
 }
 .nav-center{
   flex: 1;

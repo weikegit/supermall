@@ -5,6 +5,7 @@ const Home = () => import('../views/home/Home')
 const Cart = () => import('../views/cart/Cart')
 const Category = () => import('../views/category/Category')
 const Profile = () => import('../views/profile/Profile')
+const Recommend = () => import('../views/recommend/Recommend')
 Vue.use(VueRouter)
 
 const routes = [
@@ -30,7 +31,10 @@ const routes = [
   {
     path: '/profile',
     component: Profile
-  },
+  },{
+    path:'/recommend',
+    component:Recommend
+  }
   // {
   //   path: '/about',
   //   name: 'about',

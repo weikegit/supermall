@@ -1,5 +1,13 @@
 {
   "data":{
-    "img":["1.jpg","2.jpg","3.jpg"]
+    "home":{
+      "img":[
+        {"id":1,"name":"1","src":"assets/img/home/aisi.jpg"},
+        {"id":2,"name":"2","src":"assets/img/home/dlam.jpg"},
+        {"id":3,"name":"3","src":"assets/img/home/tianyu.jpg"},
+        {"id":4,"name":"4","src":"assets/img/home/xhr.jpg"}
+      ]
+    }
+    
   }
 }

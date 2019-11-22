@@ -3,12 +3,14 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import './plugins/element.js'
+import Element from 'element-ui'
 import 'font-awesome/css/font-awesome.css'
  import axios from 'axios'
+
 // import {request} from './network/request'
 
 Vue.config.productionTip = false
-
+Vue.use(Element)
 new Vue({
   router,
   store,
