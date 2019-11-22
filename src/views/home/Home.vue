@@ -18,6 +18,7 @@
     <home-banner :homeimg="imgList">
       
     </home-banner>
+    <recommend-view></recommend-view>
     <!-- <el-carousel indicator-position="outside" height="150px">
       <el-carousel-item v-for="item in imgList" :key="item.id">
         <a href="">
@@ -34,11 +35,13 @@
 import NavBar from "components/common/navbar/NavBar";
 import { getHomeCarousel } from "network/home";
 import HomeBanner from 'components/common/carousel/Carousel';
+import RecommendView from './children/RecommendView'
 export default {
   name: "home",
   components: {
     NavBar,
-    HomeBanner
+    HomeBanner,
+    RecommendView
     // CarOusel
   },
   data() {

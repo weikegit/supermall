@@ -1,10 +1,78 @@
 {
-    "home":{
-      "img":[
-        {"id":1,"name":"1","src":"img/home/aisi.jpg"},
-        {"id":2,"name":"2","src":"img/home/dlam.jpg"},
-        {"id":3,"name":"3","src":"img/home/tianyu.jpg"},
-        {"id":4,"name":"4","src":"img/home/xhr.jpg"}
-      ]
-    }
+  "home": {
+    "img": [
+      {
+        "id": 1,
+        "name": "1",
+        "src": "img/home/aisi.jpg"
+      },
+      {
+        "id": 2,
+        "name": "2",
+        "src": "img/home/dlam.jpg"
+      },
+      {
+        "id": 3,
+        "name": "3",
+        "src": "img/home/tianyu.jpg"
+      },
+      {
+        "id": 4,
+        "name": "4",
+        "src": "img/home/xhr.jpg"
+      }
+    ],
+    "recommends": [
+      {
+        "id": 1,
+        "title": "京东超市",
+        "src": "img/home/chaoshi.jpg"
+      },
+      {
+        "id": 2,
+        "title": "数码电器",
+        "src": "img/home/jiadian.jpg"
+      },
+      {
+        "id": 3,
+        "title": "京东服饰",
+        "src": "img/home/fushi.jpg"
+      },
+      {
+        "id": 4,
+        "title": "京东生鲜",
+        "src": "img/home/shouji.jpg"
+      },
+      {
+        "id": 5,
+        "title": "京东到家",
+        "src": "img/home/gouwu.jpg"
+      },
+      {
+        "id": 6,
+        "title": "充值中心",
+        "src": "img/home/chongzhi.jpg"
+      },
+      {
+        "id": 7,
+        "title": "9.9元拼",
+        "src": "img/home/chongzhi.jpg"
+      },
+      {
+        "id": 8,
+        "title": "领卷",
+        "src": "img/home/chongzhi.jpg"
+      },
+      {
+        "id": 9,
+        "title": "赚钱",
+        "src": "img/home/chongzhi.jpg"
+      },
+      {
+        "id": 10,
+        "title": "plus会员",
+        "src": "img/home/chongzhi.jpg"
+      }
+    ]
+  }
 }

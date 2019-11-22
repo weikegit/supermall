@@ -1,6 +1,11 @@
 <template>
-    <div>
-      
+    <div class="recommend">
+        <div v-for="item in recommends" :key="item.id">
+          <a href="">
+            <img src="item.src" alt="">
+            <div>{{item.title}}</div>
+          </a>
+        </div>
     </div>
 </template>
 
@@ -10,6 +15,14 @@ export default {
         return {
 
         };
+    },
+    props:{
+      recommends:{
+        type:Array,
+        default(){
+          return []
+        }
+      }
     },
     created() {
 
