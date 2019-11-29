@@ -2,7 +2,7 @@ import {
   request
 } from './request'
 
-export function getHomeCarousel() {
+export function getHomeChildren() {
   //ajax请求
   return request({
     url: "/json/homedata.json",

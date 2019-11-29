@@ -42,36 +42,6 @@
         "id": 4,
         "title": "京东生鲜",
         "src": "img/home/shengxian.png"
-      },
-      {
-        "id": 5,
-        "title": "京东到家",
-        "src": "img/home/jddj.png"
-      },
-      {
-        "id": 6,
-        "title": "充值中心",
-        "src": "img/home/czjf.png"
-      },
-      {
-        "id": 7,
-        "title": "9.9元拼",
-        "src": "img/home/pingou.png"
-      },
-      {
-        "id": 8,
-        "title": "领卷",
-        "src": "img/home/lingjuan.png"
-      },
-      {
-        "id": 9,
-        "title": "赚钱",
-        "src": "img/home/zhuanqian.png"
-      },
-      {
-        "id": 10,
-        "title": "plus会员",
-        "src": "img/home/plus.png"
       }
     ]
   }

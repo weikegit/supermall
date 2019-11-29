@@ -18,7 +18,7 @@
     <home-banner :homeimg="imgList">
       
     </home-banner>
-    <recommend-view></recommend-view>
+    <recommend-view :recommends="recommends"></recommend-view>
     <!-- <el-carousel indicator-position="outside" height="150px">
       <el-carousel-item v-for="item in imgList" :key="item.id">
         <a href="">
@@ -26,14 +26,13 @@
         </a> 
       </el-carousel-item>
     </el-carousel> -->
-    <h3>我是首页</h3>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
 import NavBar from "components/common/navbar/NavBar";
-import { getHomeCarousel } from "network/home";
+import { getHomeChildren } from "network/home";
 import HomeBanner from 'components/common/carousel/Carousel';
 import RecommendView from './children/RecommendView'
 export default {
@@ -46,7 +45,8 @@ export default {
   },
   data() {
     return {
-      imgList: []
+      imgList: [],
+      recommends:[]
     };
   },
   methods: {
@@ -55,9 +55,10 @@ export default {
     }
   },
   created() {
-    getHomeCarousel().then(res =>{
+    getHomeChildren().then(res =>{
       console.log(res);
-      this.imgList = res.data.home.img
+      this.imgList = res.data.home.img;
+      this.recommends = res.data.home.recommends;
     })
   },
   mounted() {
